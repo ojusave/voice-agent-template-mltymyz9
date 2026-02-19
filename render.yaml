@@ -44,8 +44,8 @@ projects:
             dockerContext: .
             
             # Environment variables for the agent
-            # Create an environment variable group in Render dashboard
-            # with these keys and add them to: voice-agent-env
+            # LLM and STT use LiveKit Inference (billed via LiveKit Cloud); no OpenAI or AssemblyAI keys required.
+            # Only add OPENAI_API_KEY / ASSEMBLYAI_API_KEY if you switch to the provider plugins.
             envVars:
               - key: NODE_ENV
                 value: production
